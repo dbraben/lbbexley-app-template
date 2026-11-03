@@ -1,0 +1,36 @@
+name: Accessibility problem
+description: Something in this service that's hard or impossible to use
+title: "[Accessibility]: "
+labels:
+  - accessibility
+body:
+  - type: markdown
+    attributes:
+      value: Accessibility problems are fixed before other work. Don't include personal data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem?
+      description: Where it happens and what goes wrong.
+    validations:
+      required: true
+  - type: input
+    id: technology
+    attributes:
+      label: Assistive technology or setting
+      description: For example NVDA with Chrome, keyboard only, 400% zoom, voice control.
+  - type: input
+    id: wcag
+    attributes:
+      label: WCAG 2.2 success criterion, if known
+      placeholder: 1.3.1 Info and relationships
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Press ...
+        3. See ...
+    validations:
+      required: true

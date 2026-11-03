@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.pa.yaml": "yaml",
+    "*.mcs.yml": "yaml"
+  },
+  "chat.useAgentsMdFile": true,
+  "chat.useAgentSkills": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "cSpell.language": "en-GB",
+  "claudeCode.initialPermissionMode": "plan",
+  "chat.useHooks": true
+}

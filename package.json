@@ -1,0 +1,25 @@
+{
+  "name": "lbbexley-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A London Borough of Bexley Power Platform service, built to the council's digital standards.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node .lbbexley/standards/scripts/lbbexley-check.js --root . --changed",
+    "check:all": "node .lbbexley/standards/scripts/lbbexley-check.js --root .",
+    "check:release": "node .lbbexley/standards/scripts/lbbexley-check.js --root . --release",
+    "test:a11y": "playwright test --config .lbbexley/standards/tests/accessibility/playwright.config.js",
+    "test:a11y:login": "node .lbbexley/standards/tests/accessibility/login.js",
+    "test:a11y:install": "playwright install chromium",
+    "transcript:clean": "node .lbbexley/standards/scripts/clean-transcript.js",
+    "verify": "npm run check:all && npm run test:a11y",
+    "standards:update": "node .lbbexley/standards/scripts/update.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1"
+  }
+}

@@ -1,0 +1,7 @@
+# Files or rules the Bexley standards check should skip in this repository.
+# One entry per line: a path pattern, then optionally a comma-separated list of rules.
+# Without rules, every rule is skipped for matching files. Always say why.
+#
+# Examples:
+#   legacy/**                          old app being replaced, not maintained
+#   src/pages/partner-widget.html  tracking-script   partner embed agreed with IG (ref 123)

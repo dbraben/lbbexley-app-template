@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "github.copilot-chat",
+    "microsoft-isvexptools.powerplatform-vscode",
+    "ms-copilotstudio.vscode-copilotstudio",
+    "redhat.vscode-yaml"
+  ]
+}

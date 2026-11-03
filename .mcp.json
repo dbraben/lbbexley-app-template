@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "dataverse": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@microsoft/dataverse",
+        "mcp",
+        "${DATAVERSE_DEV_URL:-https://your-dev-environment.crm11.dynamics.com}"
+      ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+# Quality checks for this London Borough of Bexley service.
+#  - standards: the Bexley standards check on every change (zero findings of any severity),
+#    pre-election warnings, and a check that the synced Bexley files match the release.
+#  - accessibility: Playwright and axe against the pages in tests/accessibility/targets.json.
+#    Runs when the A11Y_BASE_URL variable is set. Targets that need a sign-in also need the
+#    A11Y_STORAGE_STATE secret (a base64 copy of .auth/a11y-state.json from a test account).
+# When the standards are released again, npm run standards:update -- <version> updates both pins.
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  standards:
+    name: Bexley standards
+    uses: dbraben/lbbexley-digital-standards/.github/workflows/standards-check.yml@v0.3.0
+    with:
+      standards-ref: v0.3.0
+
+  accessibility:
+    name: Accessibility tests
+    if: ${{ vars.A11Y_BASE_URL != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Restore the test account's sign-in
+        env:
+          A11Y_STORAGE_STATE: ${{ secrets.A11Y_STORAGE_STATE }}
+        run: |
+          if [ -n "$A11Y_STORAGE_STATE" ]; then
+            mkdir -p .auth
+            echo "$A11Y_STORAGE_STATE" | base64 -d > .auth/a11y-state.json
+          fi
+
+      - name: Run the accessibility tests
+        env:
+          A11Y_BASE_URL: ${{ vars.A11Y_BASE_URL }}
+          CI: true
+        run: npm run test:a11y
+
+      - name: Upload the report
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: accessibility-report
+          path: playwright-report/
+          retention-days: 7

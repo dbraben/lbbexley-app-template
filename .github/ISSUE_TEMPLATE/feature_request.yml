@@ -1,0 +1,38 @@
+name: Feature or change
+description: Something this service should do, or do differently
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: Don't include personal data. Describe people by role, for example "residents" or "the team that runs the service". One user story per issue.
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: As a [user], I need [thing] so that [outcome].
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How we'll know it's done, including accessibility and content.
+      placeholder: |
+        - [ ] ...
+        - [ ] Works with a keyboard and a screen reader
+        - [ ] Plain English, checked against the content-style skill
+    validations:
+      required: true
+  - type: dropdown
+    id: duties
+    attributes:
+      label: Does it change any of these?
+      multiple: true
+      options:
+        - Personal data collected or shared
+        - Who can use the service, or how
+        - What the public sees
+        - AI, or decisions about people
+        - None of these

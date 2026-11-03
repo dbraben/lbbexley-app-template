@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help with the Bexley standards
+    url: https://github.com/dbraben/lbbexley-digital-standards/blob/main/SUPPORT.md
+    about: Questions about the standards, the checks or the assistant set-up.
+  - name: Suggest a change to the Bexley standards
+    url: https://github.com/dbraben/lbbexley-digital-standards/issues/new/choose
+    about: Ideas from the end-of-run check go here, usually through /lbbexley:improve.

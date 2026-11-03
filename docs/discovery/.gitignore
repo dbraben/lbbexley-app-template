@@ -1,0 +1,5 @@
+# Discovery material stays on your computer: it never goes into Git.
+# Only this file and README.md are committed. See README.md.
+*
+!.gitignore
+!README.md

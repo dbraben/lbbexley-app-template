@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "model": "opusplan",
+  "plansDirectory": "docs/plans",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "extraKnownMarketplaces": {
+    "lbbexley-digital": {
+      "source": {
+        "source": "github",
+        "repo": "dbraben/lbbexley-digital-standards"
+      }
+    },
+    "power-platform-skills": {
+      "source": {
+        "source": "github",
+        "repo": "microsoft/power-platform-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "lbbexley@lbbexley-digital": true
+  },
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Read(~/.claude/plugins/**)",
+      "Bash(npm run check*)",
+      "PowerShell(npm run check*)",
+      "Bash(npm run test:a11y)",
+      "PowerShell(npm run test:a11y)",
+      "Bash(node .lbbexley/standards/scripts/lbbexley-check.js *)",
+      "PowerShell(node .lbbexley/standards/scripts/lbbexley-check.js *)"
+    ],
+    "deny": [
+      "Bash(pac solution import *)",
+      "PowerShell(pac solution import *)",
+      "Bash(pac solution delete *)",
+      "PowerShell(pac solution delete *)",
+      "Bash(pac solution upgrade *)",
+      "PowerShell(pac solution upgrade *)",
+      "Bash(pac pipeline deploy *)",
+      "PowerShell(pac pipeline deploy *)",
+      "Bash(pac admin *)",
+      "PowerShell(pac admin *)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*.pfx)",
+      "Read(./.auth/**)",
+      "Bash(npm run transcript:clean*)",
+      "PowerShell(npm run transcript:clean*)",
+      "Bash(node .lbbexley/standards/scripts/clean-transcript.js*)",
+      "PowerShell(node .lbbexley/standards/scripts/clean-transcript.js*)",
+      "Read(./**/*.vtt)",
+      "Read(~/**/*.vtt)",
+      "Read(./**/*.roles.json)",
+      "Read(~/**/*.roles.json)"
+    ],
+    "ask": [
+      "Bash(pac pages upload*)",
+      "PowerShell(pac pages upload*)",
+      "Bash(git push *)",
+      "PowerShell(git push *)"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "dataverse-dev-url",
+      "description": "Dataverse DEV environment URL (never test or production)",
+      "default": "https://your-dev-environment.crm11.dynamics.com"
+    }
+  ],
+  "servers": {
+    "dataverse": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@microsoft/dataverse", "mcp", "${input:dataverse-dev-url}"]
+    },
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}

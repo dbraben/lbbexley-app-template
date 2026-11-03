@@ -1,0 +1,23 @@
+# Secrets and local settings
+.env
+.env.*
+*.pfx
+.claude/settings.local.json
+
+# Build output and packages (commit unpacked source, not zips or binaries)
+bin/
+obj/
+node_modules/
+*.zip
+*.msapp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Harness state, saved sign-ins and test output
+.lbbexley/state/
+.lbbexley-standards/
+.auth/
+test-results/
+playwright-report/

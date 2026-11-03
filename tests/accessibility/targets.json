@@ -1,0 +1,26 @@
+{
+  "about": "Pages and screens the accessibility tests open. Add each one in the same change that builds it. url is a path on A11Y_BASE_URL (Power Pages) or a full address. type is page (default), canvas or model-driven. auth: true needs a saved sign-in from npm run test:a11y:login. waitFor is text that appears once the page or screen has loaded. skip can list checks to leave out (reflow, focus) with a reason in reasonSkipped.",
+  "targets": [],
+  "examples": [
+    {
+      "name": "Power Pages: start page",
+      "url": "/<page path>",
+      "type": "page",
+      "auth": false,
+      "waitFor": "<text that shows once the page has loaded, such as its heading>"
+    },
+    {
+      "name": "Canvas app: first screen",
+      "url": "https://apps.powerapps.com/play/e/<environment-id>/a/<app-id>?tenantId=<tenant-id>&hidenavbar=true",
+      "type": "canvas",
+      "auth": true,
+      "waitFor": "<the screen's heading>"
+    },
+    {
+      "name": "Model-driven app: main form",
+      "url": "https://<your-dev-environment>.crm11.dynamics.com/main.aspx?appid=<app-id>&pagetype=entityrecord&etn=<table logical name, such as lbbexley_application>",
+      "type": "model-driven",
+      "auth": true
+    }
+  ]
+}
