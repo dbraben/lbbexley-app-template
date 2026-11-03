@@ -1,6 +1,8 @@
 > [!NOTE]
 > **This is the Bexley app template.** Don't work in it or change it. Select **Use this template** to create your own repository for your service, in your own account, then run `/lbbexley:new-app` in Claude Code, or ask GitHub Copilot to use the lbbexley-new-app skill. That fills in this README and removes this note. The [harness README](https://github.com/dbraben/lbbexley-digital-standards#readme) explains the rest.
 
+<img src=".github/skills/lbbexley-brand/assets/bexley-logo.png" alt="London Borough of Bexley" width="240">
+
 # {{SERVICE_NAME}}
 
 {{SERVICE_SUMMARY}}
