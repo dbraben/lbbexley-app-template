@@ -2,9 +2,13 @@
 #  - standards: the Bexley standards check on every change (zero findings of any severity),
 #    pre-election warnings, and a check that the synced Bexley files match the release.
 #  - accessibility: Playwright and axe against the pages in tests/accessibility/targets.json.
-#    Runs when the A11Y_BASE_URL variable is set. Targets that need a sign-in also need the
-#    A11Y_STORAGE_STATE secret (a base64 copy of .auth/a11y-state.json from a test account).
-# When the standards are released again, npm run standards:update -- <version> updates both pins.
+#    Runs when the A11Y_BASE_URL variable is set. Targets that need a sign-in fail unless the
+#    A11Y_STORAGE_STATE secret holds a base64 copy of .auth/a11y-state.json from a test account.
+#    If GitHub can't sign in (for example, the account needs multi-factor sign-in), set the
+#    A11Y_SKIP_SIGNED_IN variable to 1 to skip those targets here, and run npm run test:a11y for
+#    them on a computer that can sign in. The run's summary says how many targets were run.
+# When the standards are released again, npm run standards:update -- <version> updates both pins
+# and the release .claude/settings.json installs the Claude Code plugin from.
 name: Quality
 
 on:
@@ -23,9 +27,9 @@ permissions:
 jobs:
   standards:
     name: Bexley standards
-    uses: dbraben/lbbexley-digital-standards/.github/workflows/standards-check.yml@v0.4.0
+    uses: dbraben/lbbexley-digital-standards/.github/workflows/standards-check.yml@v0.5.0
     with:
-      standards-ref: v0.4.0
+      standards-ref: v0.5.0
 
   accessibility:
     name: Accessibility tests
@@ -59,6 +63,7 @@ jobs:
       - name: Run the accessibility tests
         env:
           A11Y_BASE_URL: ${{ vars.A11Y_BASE_URL }}
+          A11Y_SKIP_SIGNED_IN: ${{ vars.A11Y_SKIP_SIGNED_IN }}
           CI: true
         run: npm run test:a11y
 

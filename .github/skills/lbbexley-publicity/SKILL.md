@@ -2,7 +2,7 @@
 name: lbbexley-publicity
 description: The Code of Recommended Practice on Local Authority Publicity (2011) and the Local Government Act 1986 for council builds - public pages, chatbot answers, campaign and newsletter content, councillor names, photos and quotes, third-party content, and pre-election periods. Use when building or reviewing anything residents, businesses or partners will see, or anything mentioning councillors, political parties, council policy or elections.
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Publicity
 

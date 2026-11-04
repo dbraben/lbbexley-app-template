@@ -1,5 +1,5 @@
 {
-  "about": "Pages and screens the accessibility tests open. Add each one in the same change that builds it. url is a path on A11Y_BASE_URL (Power Pages) or a full address. type is page (default), canvas or model-driven. auth: true needs a saved sign-in from npm run test:a11y:login. waitFor is text that appears once the page or screen has loaded. skip can list checks to leave out (reflow, focus) with a reason in reasonSkipped.",
+  "about": "Pages and screens the accessibility tests open. Add each one in the same change that builds it. url is a full address, or a path on A11Y_BASE_URL (Power Pages): set A11Y_BASE_URL before npm run test:a11y:login and npm run test:a11y. type is page (default), canvas or model-driven. auth: true is for a page or screen that needs a sign-in: it fails until there is a saved sign-in from npm run test:a11y:login. waitFor is text that appears once the page or screen has loaded: give one to every target with auth: true, so an expired sign-in fails instead of testing the sign-in page. skip can list checks to leave out (reflow, focus) with a reason in reasonSkipped.",
   "targets": [],
   "examples": [
     {

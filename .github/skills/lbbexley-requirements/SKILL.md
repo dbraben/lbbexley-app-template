@@ -3,7 +3,7 @@ name: lbbexley-requirements
 description: Works out the requirements for a Bexley service in a conversation, and writes docs/requirements.md - users and their needs, user stories with priorities and acceptance criteria, rules, data, the duties that apply, what's out of scope and open questions. Asks a few questions at a time in the chat, or gives the questions as a table to take away and paste back later. Checks for personal data first and never invents answers. Use at the start of a project or a big change, before the architect and plan skills, and whenever the person pastes back a table that starts "Bexley requirements answers".
 argument-hint: "[anything to start from, or the answers table pasted back]"
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Requirements for a Bexley service
 

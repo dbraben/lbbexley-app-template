@@ -4,7 +4,7 @@ description: Sets up a new repository made from the Bexley app template - asks a
 argument-hint: "[service name]"
 disable-model-invocation: true
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Set up a new Bexley app repository
 

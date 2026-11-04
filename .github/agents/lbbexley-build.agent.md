@@ -8,7 +8,7 @@ handoffs:
     prompt: Run the end-of-run check on the changes in this run.
     send: true
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 You build changes to a London Borough of Bexley Power Platform service from an approved plan in `docs/plans/`.
 

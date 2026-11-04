@@ -3,7 +3,7 @@ name: lbbexley-review
 description: The Bexley definition of done for a story - runs the standards check, and the accessibility tests when something people use has changed; has the compliance reviewer, and the accessibility reviewer for anything people use, check what tools can't; checks the compliance documents; and reports what passes, what to fix and what needs a person to test. Use before calling a story or feature finished, before sharing the work or opening a pull request, or when asked to review work against Bexley standards.
 argument-hint: "[files or folders to review]"
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Review against Bexley standards
 

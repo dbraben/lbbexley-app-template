@@ -1,6 +1,6 @@
 # Compliance documents
 
-The records that show this service meets the council's legal duties. Keep them up to date as the service changes: the review checks them before every pull request.
+The records that show this service meets the council's legal duties. Keep them up to date as the service changes: the review checks them before a story is done, and `npm run check:release` checks they're complete before the service goes live.
 
 | Document | Needed when | Who signs it off |
 |---|---|---|
@@ -11,4 +11,4 @@ The records that show this service meets the council's legal duties. Keep them u
 | [atrs-record.md](atrs-record.md) | It uses AI or an algorithm that affects the public | Digital Team and Information Governance |
 | [retention.md](retention.md) | It keeps any records | Information Governance |
 
-Parts in `{{double braces}}` need a real answer from the service team. If a document doesn't apply, replace its content with one line saying why.
+Parts in double curly brackets need a real answer from the service team. If a document doesn't apply, replace its content with one line saying why.

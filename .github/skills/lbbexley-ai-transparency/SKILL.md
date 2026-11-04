@@ -2,7 +2,7 @@
 name: lbbexley-ai-transparency
 description: Rules for AI inside council services - Copilot Studio agents, generative answers, AI Builder and AI prompts in flows, and anything that scores, ranks, triages or decides about people. Covers telling people they're using AI, human handover, accuracy, automated decisions under UK GDPR Articles 22A-22D, and Algorithmic Transparency Recording Standard records. Use when adding AI to a service or automating a decision.
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # AI in council services
 

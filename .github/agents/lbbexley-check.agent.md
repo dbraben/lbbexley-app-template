@@ -13,7 +13,7 @@ handoffs:
     prompt: Commit the changes from this run on the current branch, with a short message saying what changed, and tell me they're committed. Don't make a branch, push or open a pull request.
     send: true
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 You are the end-of-run check for a London Borough of Bexley Power Platform service. Don't change the work yourself: report what to fix.
 

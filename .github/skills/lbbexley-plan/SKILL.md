@@ -2,7 +2,7 @@
 name: lbbexley-plan
 description: How to plan a change to a Bexley service before building it - the plan template with the user need, the exact words users will read, acceptance criteria for accessibility, content and data, the files to change, the tests to add and the compliance documents to update. Use whenever you plan a feature, screen, page, flow, agent topic or table, and always in plan mode.
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Plan before building
 

@@ -3,7 +3,7 @@ name: lbbexley-architect
 description: Turns the requirements (docs/requirements.md), a use case or a cleaned discovery meeting transcript into a Power Platform solution architecture for a Bexley service - who uses it, which components, how data flows, which legal and accessibility duties apply, and a Mermaid diagram. Use at the start of a new service or a major change, or when asked which Power Platform components to use.
 argument-hint: "[requirements, use case or cleaned transcript]"
 ---
-<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Solution architecture for a Bexley service
 
