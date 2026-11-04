@@ -9,6 +9,7 @@ What you learn before you build: cleaned meeting transcripts, notes, and your ow
 
 | File | What it is | Where it comes from |
 |---|---|---|
+| `service-introduction.md` | What you told the assistant about the service when you set up the repository | `/lbbexley:new-app` (Copilot: the lbbexley-new-app skill) |
 | `transcript-1.md`, `transcript-2.md` and so on | A Teams meeting transcript with roles instead of names, and contact details and reference numbers removed | `npm run transcript:clean` |
 | `requirement-prompt.md` | Your project in your own words: what, who, why, rules, what's out of scope | You, from the template below |
 | Any other `.md` file | Notes from a conversation, or a summary of an existing document, with no personal data | You |
@@ -45,8 +46,8 @@ The full checklist is in the data-protection skill: `.github/skills/lbbexley-dat
 
 ## In your own words
 
-No transcript, or something the meeting didn't cover? Write a requirement prompt. Copy the template from `.github/skills/lbbexley-requirements/requirement-prompt.md` to `requirement-prompt.md` here, and fill in what you know under each heading. `requirement-prompt-example.md`, in the same folder as the template, shows the level of detail that helps.
+No transcript, or something the meeting didn't cover? Write a requirement prompt. Copy the template from `.github/skills/lbbexley-requirements/requirement-prompt.md` to `requirement-prompt.md` here, and fill in what you know under each heading. Make it in VS Code, on your computer, not on GitHub: a file created on GitHub is published, and the assistant only sees what's on your computer. `requirement-prompt-example.md`, in the same folder as the template, shows the level of detail that helps.
 
 ## Then
 
-Run `/lbbexley:requirements` in Claude Code, or ask the lbbexley-plan agent in GitHub Copilot to use the lbbexley-requirements skill. It reads this folder, asks what's missing, and writes `docs/requirements.md` for the service owner to check.
+Run `/lbbexley:requirements` in Claude Code, or ask the lbbexley-plan agent in GitHub Copilot to use the lbbexley-requirements skill. It reads this folder, asks what's missing, and writes `docs/requirements.md` for the service owner to check. That file is on your computer, on your branch: open it in VS Code. It isn't on GitHub until you push.

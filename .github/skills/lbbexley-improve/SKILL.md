@@ -2,7 +2,7 @@
 name: lbbexley-improve
 description: Works through the harness improvement ideas the end-of-run check logs in .lbbexley/improvements.md - applies the ones that belong to this service, and turns the ones for the Bexley standards into proposals for the Digital Team. Use when asked to improve the harness, when the session start says ideas are waiting, or at the end of a sprint.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Improve the harness
 

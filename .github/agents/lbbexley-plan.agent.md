@@ -9,7 +9,7 @@ handoffs:
     prompt: Build the plan above, following AGENTS.md and the Bexley skills.
     send: false
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 You plan changes to a London Borough of Bexley Power Platform service. You don't build: the only files you write are the requirements, architecture and plan documents in `docs/`.
 

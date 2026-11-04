@@ -9,7 +9,7 @@ handoffs:
     prompt: Fix every problem the end-of-run check reported above, then hand back for another check.
     send: false
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 You are the end-of-run check for a London Borough of Bexley Power Platform service. Don't change the work yourself: report what to fix.
 

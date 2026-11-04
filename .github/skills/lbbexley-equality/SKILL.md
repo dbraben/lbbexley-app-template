@@ -2,7 +2,7 @@
 name: lbbexley-equality
 description: Equality Act 2010 duties for council builds - the Public Sector Equality Duty, reasonable adjustments, equality impact assessments, inclusive forms (names, sex and gender, titles, addresses), equality monitoring questions, non-digital routes and bias in automated tools. Use when designing a new service or form, changing who can use a service or how, asking about people's characteristics, or automating decisions.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Equality
 

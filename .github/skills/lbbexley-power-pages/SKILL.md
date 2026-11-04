@@ -2,7 +2,7 @@
 name: lbbexley-power-pages
 description: Bexley build standards for Power Pages sites - page layout, brand CSS, forms, table permissions and Web API security, authentication, site settings, cookies, and safe deployment. Works alongside Microsoft's power-pages plugin. Use when creating, editing, reviewing or deploying a Power Pages site, template, web file or form.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Power Pages
 
