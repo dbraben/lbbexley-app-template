@@ -3,7 +3,7 @@ name: lbbexley-architect
 description: Turns the requirements (docs/requirements.md), a use case or a cleaned discovery meeting transcript into a Power Platform solution architecture for a Bexley service - who uses it, which components, how data flows, which legal and accessibility duties apply, and a Mermaid diagram. Use at the start of a new service or a major change, or when asked which Power Platform components to use.
 argument-hint: "[requirements, use case or cleaned transcript]"
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Solution architecture for a Bexley service
 
@@ -79,5 +79,7 @@ Then say what changed, and anything still open. If a change to the design would 
 ## Save it
 
 Write the result to `docs/architecture.md` with these sections: The need, Users and how they reach the service (a table of audience, interface and purpose, including the non-digital route), Components (a table of component and role), How it works, Duties by design, Risks and open questions, and Diagram (in a ```mermaid block, which GitHub and VS Code show as a picture).
+
+Don't commit yet: the end-of-run check reviews the uncommitted changes first. Offer **Check my work**. When lbbexley-check finds nothing outstanding, it offers **Commit the work**, which commits the design. Don't make a branch, push or open a pull request unless the person asks.
 
 Then suggest the next step: `/lbbexley-new-app` if the repository isn't set up yet, then `/lbbexley-plan` for the first story in `docs/requirements.md`.

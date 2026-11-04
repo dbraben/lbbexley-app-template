@@ -2,7 +2,7 @@
 name: lbbexley-canvas-apps
 description: Bexley build standards for Power Apps canvas apps in pa.yaml source - tokens, screen layout, naming, accessibility properties, delegation, error handling, performance and solutions. Works alongside Microsoft's canvas-apps plugin. Use when generating, editing or reviewing a canvas app or custom page.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Canvas apps
 

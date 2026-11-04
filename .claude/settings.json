@@ -32,7 +32,11 @@
       "Bash(npm run test:a11y)",
       "PowerShell(npm run test:a11y)",
       "Bash(node .lbbexley/standards/scripts/lbbexley-check.js *)",
-      "PowerShell(node .lbbexley/standards/scripts/lbbexley-check.js *)"
+      "PowerShell(node .lbbexley/standards/scripts/lbbexley-check.js *)",
+      "Bash(git add *)",
+      "PowerShell(git add *)",
+      "Bash(git commit *)",
+      "PowerShell(git commit *)"
     ],
     "deny": [
       "Bash(pac solution import *)",

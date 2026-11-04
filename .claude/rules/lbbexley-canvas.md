@@ -2,7 +2,7 @@
 paths:
   - "**/*.pa.yaml"
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Canvas app source
 

@@ -4,6 +4,11 @@
 *.pfx
 .claude/settings.local.json
 
+# Original meeting transcripts and the roles files that hold the names:
+# never in a repository, even by mistake
+*.vtt
+*.roles.json
+
 # Build output and packages (commit unpacked source, not zips or binaries)
 bin/
 obj/

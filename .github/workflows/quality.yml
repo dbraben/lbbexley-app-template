@@ -23,9 +23,9 @@ permissions:
 jobs:
   standards:
     name: Bexley standards
-    uses: dbraben/lbbexley-digital-standards/.github/workflows/standards-check.yml@v0.3.2
+    uses: dbraben/lbbexley-digital-standards/.github/workflows/standards-check.yml@v0.4.0
     with:
-      standards-ref: v0.3.2
+      standards-ref: v0.4.0
 
   accessibility:
     name: Accessibility tests

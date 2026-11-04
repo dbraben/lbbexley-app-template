@@ -2,11 +2,11 @@
 
 How changes to this service are made. The same steps apply whether you use Claude Code, GitHub Copilot or neither.
 
-## 1. Start from the requirements and an issue
+## 1. Start from the requirements
 
-A new service, or a big change, starts with requirements: what the people who run and use it said, in a cleaned meeting transcript or a requirement prompt in `docs/discovery/`, turned into `docs/requirements.md` by the requirements skill and checked by the service owner. [docs/discovery/README.md](docs/discovery/README.md) says how.
+A new service, or a big change, starts with requirements: what the people who run and use it said, in a conversation with the requirements skill and any cleaned meeting transcripts in `docs/discovery/`, written up in `docs/requirements.md` and checked by the service owner. [docs/discovery/README.md](docs/discovery/README.md) says how.
 
-Every change then starts as an issue: a feature (one user story, with its acceptance criteria), a bug, or an accessibility problem. Accessibility problems come first. Never put personal data in an issue.
+Each change is then one user story from the requirements, a bug or an accessibility problem. Accessibility problems come first. If your team tracks work in GitHub issues, raise one for each, and never put personal data in an issue.
 
 ## 2. Plan
 
@@ -14,7 +14,7 @@ Write a plan in `docs/plans/` before building, using the plan skill's template. 
 
 ## 3. Build
 
-On a branch, in the dev environment, with fictional data only. Follow `AGENTS.md` and the Bexley skills. Add each new page or screen to `tests/accessibility/targets.json` and each agent topic to `tests/agent-test-set.md` as you build them.
+In the dev environment, with fictional data only. Follow `AGENTS.md` and the Bexley skills. Add each new page or screen to `tests/accessibility/targets.json` and each agent topic to `tests/agent-test-set.md` as you build them.
 
 ## 4. Check
 
@@ -25,9 +25,13 @@ On a branch, in the dev environment, with fictional data only. Follow `AGENTS.md
 
 Zero findings of any severity is the definition of done.
 
-## 5. Pull request
+## 5. Save and share
 
-Use the pull request template. The Quality workflow must pass, and a colleague reviews the change. Update `docs/compliance/` in the same pull request if the service changed.
+- **Saving.** The assistant commits the work once the end-of-run check is clean, on the branch you're on, so nobody has to run Git: in Claude Code the check asks it to, and in Copilot lbbexley-check offers **Commit the work**.
+- **Sharing.** Ask the assistant to push the work to GitHub. The Quality workflow checks it there too, whichever assistant wrote it, or none.
+- **Working in a team?** Put each change on a branch of its own and open a pull request, using the pull request template. The Quality workflow must pass, and a colleague reviews the change.
+
+Update `docs/compliance/` in the same change if the service changed.
 
 ## Improving the harness
 

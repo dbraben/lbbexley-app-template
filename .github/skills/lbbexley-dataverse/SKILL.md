@@ -2,7 +2,7 @@
 name: lbbexley-dataverse
 description: Bexley standards for Dataverse and model-driven apps - publisher and prefix, table and column design, naming, security roles, auditing, retention, solutions and ALM, the Dataverse MCP server, and model-driven forms, views and theming. Use when designing tables or columns, setting security, building or reviewing a model-driven app, working with solutions, or using the Dataverse MCP tools.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Dataverse and model-driven apps
 

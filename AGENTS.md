@@ -20,9 +20,10 @@ This is a London Borough of Bexley service built on the Power Platform. The coun
 
 ## How work runs: plan, build, check
 
-1. **Plan** on the strongest model. Claude Code starts in plan mode with `opusplan` (Opus plans, Sonnet builds); Copilot uses the lbbexley-plan agent. For a new service or a big change, use the requirements skill (from the material in `docs/discovery/`), then the architect skill. Use the plan skill for every feature, starting from its user story in `docs/requirements.md`. Plans go in `docs/plans/`.
+1. **Plan** on the strongest model. Claude Code starts in plan mode with `opusplan` (Opus plans, Sonnet builds); Copilot uses the lbbexley-plan agent. For a new service or a big change, use the requirements skill (a conversation in the chat, plus any cleaned material in `docs/discovery/`), then the architect skill. Use the plan skill for every feature, starting from its user story in `docs/requirements.md`. Plans go in `docs/plans/`.
 2. **Build** on the everyday model, once the person approves the plan.
 3. **Check** on a smaller model. Before you finish, the end-of-run check runs the standards check on everything you changed and asks the end-of-run reviewer (Haiku in Claude Code; lbbexley-check in Copilot) to look at the changes. Fix everything it finds. Its ideas for improving the harness go to `.lbbexley/improvements.md`.
+4. **Save** the work once the check is clean, so the person never has to: commit what changed on the current branch, with a short message saying what changed, and tell them it's committed. In Claude Code, the end-of-run check asks for this when it passes; in Copilot, lbbexley-check offers **Commit the work**. Don't commit before the check, which reviews the uncommitted changes, and don't make branches, push or open pull requests unless the person asks.
 
 ## Always
 
@@ -51,7 +52,7 @@ This is a London Borough of Bexley service built on the Power Platform. The coun
 | Folder | Contents |
 |---|---|
 | `src/` | Solution source: canvas apps (`.pa.yaml`), Power Pages site, agent (`.mcs.yml`), flows, Dataverse |
-| `docs/discovery/` | Cleaned meeting transcripts, notes and the requirement prompt. Stays on each person's computer: Git ignores everything here except the README |
+| `docs/discovery/` | What the person said at set-up (`service-introduction.md`), cleaned meeting transcripts and notes. Stays on each person's computer: Git ignores everything here except the README |
 | `docs/requirements.md` | The requirements: users and their needs, user stories with acceptance criteria, rules, data, duties, open questions |
 | `docs/architecture.md` | The service's design: users, components, data flow, duties, diagram |
 | `docs/plans/` | One plan per change |
@@ -70,7 +71,7 @@ This is a London Borough of Bexley service built on the Power Platform. The coun
 | Accessibility tests, WCAG 2.2 AA | `npm run test:a11y` |
 | Save a sign-in for the accessibility tests | `npm run test:a11y:login` |
 | Release check: compliance documents complete | `npm run check:release` |
-| Review before a pull request | `/lbbexley:review` in Claude Code, `/lbbexley-review` in Copilot |
+| Review before a story is done, or before sharing the work | `/lbbexley:review` in Claude Code, `/lbbexley-review` in Copilot |
 | Update to a new release of the standards | `npm run standards:update -- <version>` |
 | Clean a Teams meeting transcript (people only, never the assistant) | `npm run transcript:clean -- <path to the transcript>` |
 | Sign in to the dev environment | `pac auth create --environment {{DEV_ENVIRONMENT_URL}}` |

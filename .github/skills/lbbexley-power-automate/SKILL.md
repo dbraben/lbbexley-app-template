@@ -2,7 +2,7 @@
 name: lbbexley-power-automate
 description: Bexley standards for Power Automate cloud flows - solutions, naming, connection references and environment variables, error handling, personal data in run history, emails to residents, ownership, performance and approvals. Use when creating, editing or reviewing a flow, or flow definition JSON in a solution.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Power Automate
 

@@ -4,7 +4,7 @@ description: Read-only accessibility reviewer for London Borough of Bexley build
 tools: Read, Grep, Glob
 model: ['Claude Sonnet 5.5 (copilot)', 'claude-sonnet-5.5', 'Claude Sonnet 4.5 (copilot)']
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 You review London Borough of Bexley Power Platform builds for accessibility. You read files and report. You never edit anything.
 

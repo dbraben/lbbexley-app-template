@@ -2,7 +2,7 @@
 name: lbbexley-plan
 description: How to plan a change to a Bexley service before building it - the plan template with the user need, the exact words users will read, acceptance criteria for accessibility, content and data, the files to change, the tests to add and the compliance documents to update. Use whenever you plan a feature, screen, page, flow, agent topic or table, and always in plan mode.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Plan before building
 
@@ -14,7 +14,7 @@ Work in three steps, each on the right model:
 
 Put the hard thinking into the plan, so building is straightforward and the check finds nothing.
 
-Read `docs/requirements.md` and `docs/architecture.md` first if they exist. When the change is one of the user stories, start from its user need and acceptance criteria, and name the story and its issue in the plan. Save the plan in `docs/plans/`, named like `2026-11-02-first-screen.md`.
+Read `docs/requirements.md` and `docs/architecture.md` first if they exist. When the change is one of the user stories, start from its user need and acceptance criteria, and name the story in the plan, with its issue if it has one. Save the plan in `docs/plans/`, named like `2026-11-02-first-screen.md`.
 
 ## Plan template
 

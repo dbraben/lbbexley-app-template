@@ -2,7 +2,7 @@
 name: lbbexley-improve
 description: Works through the harness improvement ideas the end-of-run check logs in .lbbexley/improvements.md - applies the ones that belong to this service, and turns the ones for the Bexley standards into proposals for the Digital Team. Use when asked to improve the harness, when the session start says ideas are waiting, or at the end of a sprint.
 ---
-<!-- Generated from lbbexley-digital-standards 0.3.2 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.4.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Improve the harness
 
@@ -26,7 +26,7 @@ The end-of-run check runs on a smaller model after each piece of work. As well a
 - If the GitHub CLI is available and the person agrees, create an issue in the standards repository: `gh issue create --repo dbraben/lbbexley-digital-standards --label harness-improvement --title "Harness idea: <short title>" --body-file <file>`. If the label is refused, run it again without `--label`: the title tells the Digital Team what it is. Otherwise give the person the text to paste into the "Harness improvement" issue form.
 - Tick it and add `(proposed: <issue link or "text given">)`.
 
-4. Commit the updated `improvements.md` together with any changes you applied.
+4. Tell the person what you applied, proposed and dropped. The updated `improvements.md` and any changes you applied are committed together once the end-of-run check passes: offer **Check my work**, then **Commit the work**. Don't commit before that.
 
 ## Rules
 

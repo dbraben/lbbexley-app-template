@@ -13,16 +13,16 @@ A London Borough of Bexley service built on the Power Platform to the council's 
 
 1. Open the folder in VS Code and run `claude` in VS Code's terminal. Trust the folder, and accept the offer to add the Bexley and Microsoft plugin marketplaces.
 2. Run `/lbbexley:new-app` and answer the questions. (In GitHub Copilot, ask it to use the lbbexley-new-app skill.)
-3. Capture the requirements in `docs/discovery/`: a Teams meeting transcript cleaned with `npm run transcript:clean`, your own requirement prompt, or both. [docs/discovery/README.md](docs/discovery/README.md) says how.
-4. Run `/lbbexley:requirements`, ask the service owner to check `docs/requirements.md`, then design the service with `/lbbexley:architect`. (In Copilot, use the lbbexley-requirements and lbbexley-architect skills with the lbbexley-plan agent.)
-5. Follow the onboarding guide in the **lbbexley-digital-standards** repository (`docs/onboarding.md`).
+3. Run `/lbbexley:requirements`. It asks about the service in the chat, a few questions at a time, or gives you the questions as a table to answer with the service team and paste back later. Ask the service owner to agree the summary, then design the service with `/lbbexley:architect`. (In Copilot, use the lbbexley-requirements and lbbexley-architect skills with the lbbexley-plan agent.)
+4. Follow the onboarding guide in the **lbbexley-digital-standards** repository (`docs/onboarding.md`).
 
 ## Working on this service
 
 - Read `AGENTS.md`: the service details, how work runs and the rules that always apply.
 - Plan, build, check: start each change in plan mode (Claude Code) or with the lbbexley-plan agent (Copilot). The end-of-run check runs before the assistant can finish.
 - Build in the dev environment with fictional data only.
-- Run `npm run verify` and `/lbbexley:review` (Copilot: `/lbbexley-review`) before opening a pull request. Every pull request runs the Bexley standards check and, once set up, the accessibility tests.
+- The assistant commits the work for you once the end-of-run check passes, on the branch you're on. You don't need to run Git.
+- Run `/lbbexley:review` (Copilot: `/lbbexley-review`) before you call a story done. When the work is pushed to GitHub, the Quality workflow runs the Bexley standards check again and, once set up, the accessibility tests.
 - Keep the documents in `docs/compliance/` up to date as the service changes.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
