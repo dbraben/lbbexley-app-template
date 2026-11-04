@@ -1,5 +1,5 @@
 > [!NOTE]
-> **This is the Bexley app template.** Don't work in it or change it. Select **Use this template** to create your own repository for your service, in your own account, then run `/lbbexley:new-app` in Claude Code, or ask GitHub Copilot to use the lbbexley-new-app skill. That fills in this README and removes this note. The [harness README](https://github.com/dbraben/lbbexley-digital-standards#readme) explains the rest.
+> **This is the Bexley app template.** Don't work in it or change it. To create your own repository for your service, in your own account, sign in to GitHub and select **Use this template** at the top right of this page, beside **Star**. Then run `/lbbexley:new-app` in Claude Code, or ask GitHub Copilot to use the lbbexley-new-app skill. That fills in this README and removes this note. The [harness README](https://github.com/dbraben/lbbexley-digital-standards#readme) explains the rest.
 
 <img src=".github/skills/lbbexley-brand/assets/bexley-logo.png" alt="London Borough of Bexley" width="240">
 
@@ -11,7 +11,7 @@ A London Borough of Bexley service built on the Power Platform to the council's 
 
 ## New repository from this template?
 
-1. Open the folder in VS Code and start Claude Code. Trust the folder, and accept the offer to add the Bexley and Microsoft plugin marketplaces.
+1. Open the folder in VS Code and run `claude` in VS Code's terminal. Trust the folder, and accept the offer to add the Bexley and Microsoft plugin marketplaces.
 2. Run `/lbbexley:new-app` and answer the questions. (In GitHub Copilot, ask it to use the lbbexley-new-app skill.)
 3. Capture the requirements in `docs/discovery/`: a Teams meeting transcript cleaned with `npm run transcript:clean`, your own requirement prompt, or both. [docs/discovery/README.md](docs/discovery/README.md) says how.
 4. Run `/lbbexley:requirements`, ask the service owner to check `docs/requirements.md`, then design the service with `/lbbexley:architect`. (In Copilot, use the lbbexley-requirements and lbbexley-architect skills with the lbbexley-plan agent.)
