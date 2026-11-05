@@ -4,14 +4,20 @@
   "plansDirectory": "docs/plans",
   "attribution": {
     "commit": "",
-    "pr": ""
+    "pr": "",
+    "sessionUrl": false
+  },
+  "env": {
+    "POWER_PLATFORM_SKILLS_TELEMETRY_POWER_AUTOMATE_OPTOUT": "1",
+    "POWER_PLATFORM_SKILLS_TELEMETRY_POWER_PAGES_OPTOUT": "1",
+    "POWER_PLATFORM_SKILLS_TELEMETRY_MODEL_APPS_OPTOUT": "1"
   },
   "extraKnownMarketplaces": {
     "lbbexley-digital": {
       "source": {
         "source": "github",
         "repo": "dbraben/lbbexley-digital-standards",
-        "ref": "v0.6.0"
+        "ref": "v0.6.1"
       }
     },
     "power-platform-skills": {
@@ -49,6 +55,8 @@
       "PowerShell(pac solution sync*)",
       "Bash(pac solution clone *)",
       "PowerShell(pac solution clone *)",
+      "Bash(pac solution add-solution-component *)",
+      "PowerShell(pac solution add-solution-component *)",
       "Bash(pac pages download *)",
       "PowerShell(pac pages download *)",
       "Bash(pac pages upload *)",

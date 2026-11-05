@@ -2,14 +2,15 @@
 name: lbbexley-power-automate
 description: Bexley standards for Power Automate cloud flows - solutions, naming, connection references and environment variables, error handling, personal data in run history, emails to residents, ownership, performance and approvals. Use when creating, editing or reviewing a flow, or flow definition JSON in a solution.
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Power Automate
 
 ## Build in the dev environment
 
 - Build and change flows directly in the dev environment, inside the solution, with Microsoft's Power Automate plugin (power-platform-skills marketplace). It signs in with the Azure CLI: run `az login` with the same account as `pac`.
-- The Bexley guardrails block deleting a flow or a connection and copying a flow, and ask the person before running a flow or calling a connector (they can send real emails or messages) or switching environment. Creating, editing, publishing and turning off flows go ahead without asking. The plugin keeps a backup of each flow before it changes it.
+- **Put each new flow in the solution yourself.** The plugin's `create_flow` makes a flow outside the service's solution, so `pac solution sync` won't see it until it's added. Get its Dataverse workflow ID with `get_flow_context` (`workflowId`), then run `pac solution add-solution-component --solutionUniqueName <solution in AGENTS.md> --component <workflowId> --componentType 29`. Do this before the first sync of the flow, and check it's there afterwards: the flow's JSON appears under `src/solution/<solution>/src/Workflows/`.
+- The Bexley guardrails block deleting a flow or a connection, copying a flow and `smoke_test` (it creates, runs and deletes a flow), and ask the person before running a flow or calling a connector (they can send real emails or messages) or switching environment. Creating, editing, publishing and turning off flows go ahead without asking. The plugin keeps a backup of each flow before it changes it.
 - After a change, the end-of-run check has the solution synced into `src/solution`, where the flow definitions are JSON under `Workflows/`. The standards check runs on them, then the work is reviewed, committed and pushed. Never edit the synced JSON by hand: change the flow and sync again.
 
 ## Set-up

@@ -2,7 +2,7 @@
 name: lbbexley-plan
 description: How to plan a change to a Bexley service before building it - the plan template with the user need, the exact words users will read, acceptance criteria for accessibility, content and data, where in the dev environment it's built, the tests to add and the compliance documents to update. Use whenever you plan a feature, screen, page, flow, agent topic or table, and always in plan mode.
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Plan before building
 
@@ -41,7 +41,8 @@ Headings, labels, hints, buttons, error messages and confirmations, written now 
 
 ## Where it's built
 The resource in the dev environment that changes (the app, flow, table or site, in the solution named
-in AGENTS.md) and the tool that changes it. The latest version comes into src/ through the sync.
+in AGENTS.md) and the tool that changes it. A new flow or table is added to the solution with
+pac solution add-solution-component before the sync. The latest version comes into src/ through the sync.
 
 ## Tests
 - Pages or screens to add to tests/accessibility/targets.json

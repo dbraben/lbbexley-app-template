@@ -18,3 +18,7 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    ignore:
+      # The check on GitHub is pinned to the same release as the synced Bexley
+      # files and .claude/settings.json: npm run standards:update moves them together.
+      - dependency-name: dbraben/lbbexley-digital-standards

@@ -2,7 +2,7 @@
 name: lbbexley-brand
 description: London Borough of Bexley digital brand (colours, Lato typography, links, focus and error styles, identity) for canvas apps, Power Pages, model-driven apps, emails and agent cards. Use whenever you choose a colour, font, size or style, or build anything people will see.
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Bexley digital brand
 

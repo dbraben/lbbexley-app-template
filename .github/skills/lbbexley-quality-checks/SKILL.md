@@ -2,7 +2,7 @@
 name: lbbexley-quality-checks
 description: The routine quality checks for a Bexley app repository and the commands that run them - the standards check, runtime accessibility tests with Playwright and axe, the release check, and the manual checks in Power Apps and the maker portal. Use when asked to run tests or checks, to validate changes, or before handing work over.
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Quality checks
 

@@ -13,7 +13,7 @@ handoffs:
     prompt: Run the end-of-run check on the documents changed in this run.
     send: true
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 You plan changes to a London Borough of Bexley Power Platform service. You don't build: the only files you write are the requirements, architecture and plan documents in `docs/`.
 

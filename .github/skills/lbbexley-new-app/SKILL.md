@@ -4,7 +4,7 @@ description: Sets up a new repository made from the Bexley app template - asks a
 argument-hint: "[service name]"
 disable-model-invocation: true
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Set up a new Bexley app repository
 
@@ -60,9 +60,9 @@ Tell the person, briefly:
 
 1. What you filled in, and which compliance documents still need their input.
 2. That anyone using Claude Code should restart it so the plugin changes load.
-3. That everything is built in the dev environment, and the repository keeps the latest version. If there's a dev environment: to create the solution in it with the Bexley publisher (prefix `lbbexley`) and the solution name above, and to sign in with `pac auth create --environment <dev environment>`. For flows, to install the Azure CLI and run `az login` with the same account. For a canvas app, to have the .NET 10 SDK, create the app in the solution with coauthoring on, and run `/configure-canvas-mcp`. If there's no environment yet, that's expected: the design step and the configuration step will say when to create the solution.
-3a. That the service's technology and environment can stay undecided for now, and that they'll be settled after the requirements and the design.
-4. That each page or screen they build goes into `tests/accessibility/targets.json`, and to run `npm run test:a11y:login` once there's something to sign in to.
-5. That the set-up is committed for them once the check passes, and that the next step is `/lbbexley-requirements`. It asks about the service in the chat, starting from what they've already said, or gives them the questions as a table to answer later. Start each feature with `/lbbexley-plan` in plan mode once the service owner has agreed the requirements.
+3. That everything is built in the dev environment, and the repository keeps the latest version. If there's a dev environment: to create the solution in it with the Bexley publisher (prefix `lbbexley`) and the solution name above, to set it as their **preferred solution** in Power Apps (**Solutions**, select it, **Set preferred solution**), so anything they create in the maker portal lands in it, and to sign in with `pac auth create --environment <dev environment>`. For flows, to install the Azure CLI and run `az login` with the same account. For a canvas app, to have the .NET 10 SDK, create the app in the solution with coauthoring on, and run `/configure-canvas-mcp`. If there's no environment yet, that's expected: the design step and the configuration step will say when to create the solution.
+4. That the service's technology and environment can stay undecided for now, and that they'll be settled after the requirements and the design.
+5. That each page or screen they build goes into `tests/accessibility/targets.json`, and to run `npm run test:a11y:login` once there's something to sign in to.
+6. That the set-up is committed for them once the check passes, and that the next step is `/lbbexley-requirements`. It asks about the service in the chat, starting from what they've already said, or gives them the questions as a table to answer later. Start each feature with `/lbbexley-plan` in plan mode once the service owner has agreed the requirements.
 
 If they come back to this repository later, they don't rerun this skill. They read the project state (`AGENTS.md`, `docs/`) and resume at the next incomplete stage.

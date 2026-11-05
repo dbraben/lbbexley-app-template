@@ -2,7 +2,7 @@
 name: lbbexley-data-protection
 description: UK GDPR and the Data Protection Act 2018 (as amended by the Data (Use and Access) Act 2025), cookies under PECR, FOI and records management, fictional test data, and cleaning meeting transcripts before they're used for requirements, applied to canvas apps, Power Pages, Copilot Studio, flows and Dataverse. Use when a build collects, stores, shows, shares, exports or deletes information about people, sets cookies or analytics, keeps records, needs test data, or starts from a meeting transcript.
 ---
-<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.1 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Data protection
 
