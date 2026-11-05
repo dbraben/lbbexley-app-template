@@ -8,5 +8,14 @@
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "cSpell.language": "en-GB",
   "claudeCode.initialPermissionMode": "plan",
-  "chat.useHooks": true
+  "chat.useHooks": true,
+  "chat.tools.terminal.autoApprove": {
+    "/^npm run (check|check:all|test:a11y)$/": true,
+    "/^git (add|commit)\\b/": true,
+    "/^git push( origin [\\w./-]+)?$/": true,
+    "/^pac (env|org) who$/": true,
+    "/^pac solution (sync|clone)\\b/": true,
+    "/^pac pages (upload|download)\\b/": true,
+    "/^git push\\b.*(-f\\b|--force|--delete|-d\\b|--mirror|\\s\\+)/": false
+  }
 }

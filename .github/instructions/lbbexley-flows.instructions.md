@@ -2,7 +2,7 @@
 description: 'Bexley rules for Power Automate flow definitions'
 applyTo: '**/Workflows/*.json,**/workflows/*.json'
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Power Automate flow definitions
 

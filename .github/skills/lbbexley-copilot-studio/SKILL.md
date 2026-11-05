@@ -2,7 +2,7 @@
 name: lbbexley-copilot-studio
 description: Bexley standards for Copilot Studio agents - instructions, greeting, knowledge sources, generative answers settings, handover to a person, sensitive topics, authentication, publicity rules, testing and transcripts. Use when designing, writing instructions or topics for, reviewing or publishing a Copilot Studio agent, including agent source (.mcs.yml) edited in VS Code.
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Copilot Studio agents
 
@@ -38,7 +38,7 @@ An agent speaks for the council, so it follows the content-style, accessibility,
 
 ## Source control
 
-Agent source cloned with the Copilot Studio extension for VS Code (`.mcs.yml` files) lives under `src/` and is checked by the standards check. Review changes in pull requests, and publish only from the approved environment.
+Agent source cloned with the Copilot Studio extension for VS Code (`.mcs.yml` files) lives under `src/` and is checked by the standards check, then reviewed, committed and pushed by the end-of-run check. There's no tool for the assistant to change an agent directly: the person applies each change with the extension. Publish only from the approved environment.
 
 ## Testing before publishing
 

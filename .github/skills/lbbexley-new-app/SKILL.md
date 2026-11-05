@@ -4,7 +4,7 @@ description: Sets up a new repository made from the Bexley app template - asks a
 argument-hint: "[service name]"
 disable-model-invocation: true
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Set up a new Bexley app repository
 
@@ -29,7 +29,7 @@ Use $ARGUMENTS as the service name if given. Ask for anything else you don't kno
 | `{{PERSONAL_DATA}}` | Will it handle personal data? If so, what kinds? |
 | `{{AI_FEATURES}}` | Will it use AI: an agent, AI Builder, AI prompts in flows, or none? |
 
-Accept "not decided yet" for `{{BUILD_TYPES}}` and "no environment yet" for `{{DEV_ENVIRONMENT_URL}}`. These are normal answers at this stage: the design step decides the technology, and the environment can come later. Don't keep asking for them.
+Accept "not decided yet" for `{{BUILD_TYPES}}` and "no environment yet" for `{{DEV_ENVIRONMENT_URL}}`. These are normal answers at this stage: the design step decides the technology, and the environment can come later. Don't keep asking for them. Building needs the environment, though: everything is built there, and the repository keeps the latest version.
 
 If the person has already described the purpose, users, rules, data or systems, record what they said in `docs/discovery/service-introduction.md`, so the requirements skill can reuse it and doesn't ask again. Run the personal data check in the requirements skill first, and write nothing that fails it. Keep it to what the person said, in their own words, with no names of residents or staff.
 
@@ -46,7 +46,7 @@ If the dev environment URL doesn't look like a dev environment (for example it c
 
 ## 4. Turn on the Microsoft plugins this build needs
 
-Skip this step in Copilot. Developers using Claude Code turn the Microsoft plugins on in `.claude/settings.json`; tell the person which ones match the build types: canvas-apps, power-pages or model-apps from the power-platform-skills marketplace.
+Skip this step in Copilot. Developers using Claude Code turn the Microsoft plugins on in `.claude/settings.json`; tell the person which ones match the build types: canvas-apps, power-automate, power-pages or model-apps from the power-platform-skills marketplace. In VS Code, they install the same plugins from the Extensions view (`@agentPlugins`).
 
 ## 5. Install the test tools
 
@@ -54,13 +54,13 @@ Run `npm install`, then `npm run test:a11y:install` to install the browser the a
 
 ## 6. Finish
 
-Don't commit yet: the end-of-run check reviews the uncommitted changes first. Finish by offering **Check my work**. When lbbexley-check finds nothing outstanding, it offers **Commit the work**, which commits the set-up. Don't make a branch, push or open a pull request unless the person asks.
+Don't commit yet: the end-of-run check reviews the uncommitted changes first. Finish by offering **Check my work**. When lbbexley-check finds nothing outstanding, it offers **Commit the work**, which commits and pushes the set-up. Don't make a branch or open a pull request unless the person asks.
 
 Tell the person, briefly:
 
 1. What you filled in, and which compliance documents still need their input.
 2. That anyone using Claude Code should restart it so the plugin changes load.
-3. If there's a dev environment: to create the solution in it with the Bexley publisher (prefix `lbbexley`) and the solution name above, and to run `/configure-canvas-mcp` once only if a canvas app is part of the design. If there's no environment yet, that's expected: the design step and the configuration step will say when to create the solution.
+3. That everything is built in the dev environment, and the repository keeps the latest version. If there's a dev environment: to create the solution in it with the Bexley publisher (prefix `lbbexley`) and the solution name above, and to sign in with `pac auth create --environment <dev environment>`. For flows, to install the Azure CLI and run `az login` with the same account. For a canvas app, to have the .NET 10 SDK, create the app in the solution with coauthoring on, and run `/configure-canvas-mcp`. If there's no environment yet, that's expected: the design step and the configuration step will say when to create the solution.
 3a. That the service's technology and environment can stay undecided for now, and that they'll be settled after the requirements and the design.
 4. That each page or screen they build goes into `tests/accessibility/targets.json`, and to run `npm run test:a11y:login` once there's something to sign in to.
 5. That the set-up is committed for them once the check passes, and that the next step is `/lbbexley-requirements`. It asks about the service in the chat, starting from what they've already said, or gives them the questions as a table to answer later. Start each feature with `/lbbexley-plan` in plan mode once the service owner has agreed the requirements.

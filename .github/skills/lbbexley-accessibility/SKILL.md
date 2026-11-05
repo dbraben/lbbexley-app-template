@@ -2,7 +2,7 @@
 name: lbbexley-accessibility
 description: Bexley accessibility rules (WCAG 2.2 AA plus the council's own guides) for canvas apps, Power Pages, model-driven apps, Copilot Studio agents, emails and documents. Use when building or reviewing anything people see, hear or operate, including staff-only apps, and before publishing.
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Accessibility
 

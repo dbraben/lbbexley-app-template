@@ -2,7 +2,7 @@
 name: lbbexley-content-style
 description: Plain English and Bexley content rules for every word people read - screen text, labels, hints, buttons, error messages, emails, agent replies, page copy and alt text. Use when writing or reviewing any user-facing text, in any Power Platform build.
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Content style
 

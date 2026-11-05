@@ -3,7 +3,7 @@ paths:
   - "**/*.mcs.yml"
   - "**/*.mcs.yaml"
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Copilot Studio agent source
 

@@ -3,7 +3,7 @@ name: lbbexley-requirements
 description: Works out the requirements for a Bexley service in a conversation, and writes docs/requirements.md - users and their needs, user stories with priorities and acceptance criteria, rules, data, the duties that apply, what's out of scope and open questions. Asks a few questions at a time in the chat, or gives the questions as a table to take away and paste back later. Checks for personal data first and never invents answers. Use at the start of a project or a big change, before the architect and plan skills, and whenever the person pastes back a table that starts "Bexley requirements answers".
 argument-hint: "[anything to start from, or the answers table pasted back]"
 ---
-<!-- Generated from lbbexley-digital-standards 0.5.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
+<!-- Generated from lbbexley-digital-standards 0.6.0 by scripts/sync-app.js. Don't edit here: change the standards repository and sync again. -->
 
 # Requirements for a Bexley service
 
@@ -127,7 +127,7 @@ Rules for writing them:
 
 Don't send the person to the file. In the chat, show a short summary: the users and their main needs, the user stories as a list with their priorities, and the open questions with who can answer them. Ask what to change, and make the changes they ask for.
 
-The person never commits it themselves. Don't commit yet: the end-of-run check reviews the uncommitted changes first. Offer **Check my work**. When lbbexley-check finds nothing outstanding, it offers **Commit the work**, which commits it. Don't make a branch, push or open a pull request unless they ask. The file holds no personal data, and `docs/discovery/` is never committed: Git ignores it.
+The person never commits it themselves. Don't commit yet: the end-of-run check reviews the uncommitted changes first. Offer **Check my work**. When lbbexley-check finds nothing outstanding, it offers **Commit the work**, which commits and pushes it. Don't make a branch or open a pull request unless they ask. The file holds no personal data, and `docs/discovery/` is never committed: Git ignores it.
 
 Offer the summary as plain text the person can paste into an email or a Teams message for the service owner. When the owner agrees, record their role and the date in the status line: it's committed again the same way.
 

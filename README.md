@@ -20,9 +20,9 @@ A London Borough of Bexley service built on the Power Platform to the council's 
 
 - Read `AGENTS.md`: the service details, how work runs and the rules that always apply.
 - Plan, build, check: start each change in plan mode (Claude Code) or with the lbbexley-plan agent (Copilot). The end-of-run check runs before the assistant can finish.
-- Build in the dev environment with fictional data only.
-- The assistant commits the work for you once the end-of-run check passes, on the branch you're on. You don't need to run Git.
-- Run `/lbbexley:review` (Copilot: `/lbbexley-review`) before you call a story done. When the work is pushed to GitHub, the Quality workflow runs the Bexley standards check again and, once set up, the accessibility tests.
+- The assistant builds in the dev environment, with fictional data only, using Microsoft's tools. This repository keeps the guidelines and the latest version of the service, synced from the dev environment.
+- Once the end-of-run check passes, the assistant commits the latest version and pushes it to GitHub, on the branch you're on. You don't need to run Git.
+- Run `/lbbexley:review` (Copilot: `/lbbexley-review`) before you call a story done. On GitHub, the Quality workflow runs the Bexley standards check on every push and, once set up, the accessibility tests.
 - Keep the documents in `docs/compliance/` up to date as the service changes.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.

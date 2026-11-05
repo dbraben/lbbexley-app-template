@@ -20,6 +20,9 @@ node_modules/
 .DS_Store
 Thumbs.db
 
+# Planning notes Microsoft's canvas tools write next to each app's source
+src/canvas/**/*.md
+
 # Harness state, saved sign-ins and test output
 .lbbexley/state/
 .lbbexley-standards/

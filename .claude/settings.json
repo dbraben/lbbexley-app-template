@@ -11,7 +11,7 @@
       "source": {
         "source": "github",
         "repo": "dbraben/lbbexley-digital-standards",
-        "ref": "v0.5.0"
+        "ref": "v0.6.0"
       }
     },
     "power-platform-skills": {
@@ -37,7 +37,28 @@
       "Bash(git add *)",
       "PowerShell(git add *)",
       "Bash(git commit *)",
-      "PowerShell(git commit *)"
+      "PowerShell(git commit *)",
+      "mcp__dataverse__*",
+      "mcp__plugin_canvas-apps_canvas-authoring__*",
+      "mcp__plugin_power-automate_flowagent__*",
+      "Bash(pac env who)",
+      "PowerShell(pac env who)",
+      "Bash(pac org who)",
+      "PowerShell(pac org who)",
+      "Bash(pac solution sync*)",
+      "PowerShell(pac solution sync*)",
+      "Bash(pac solution clone *)",
+      "PowerShell(pac solution clone *)",
+      "Bash(pac pages download *)",
+      "PowerShell(pac pages download *)",
+      "Bash(pac pages upload *)",
+      "PowerShell(pac pages upload *)",
+      "Bash(git push)",
+      "PowerShell(git push)",
+      "Bash(git push *)",
+      "PowerShell(git push *)",
+      "Bash(git clean -fX src/canvas/*)",
+      "PowerShell(git clean -fX src/canvas/*)"
     ],
     "deny": [
       "Bash(pac solution import *)",
@@ -61,13 +82,29 @@
       "Read(./**/*.vtt)",
       "Read(~/**/*.vtt)",
       "Read(./**/*.roles.json)",
-      "Read(~/**/*.roles.json)"
-    ],
-    "ask": [
-      "Bash(pac pages upload*)",
-      "PowerShell(pac pages upload*)",
-      "Bash(git push *)",
-      "PowerShell(git push *)"
+      "Read(~/**/*.roles.json)",
+      "Bash(git push --force*)",
+      "PowerShell(git push --force*)",
+      "Bash(git push -f*)",
+      "PowerShell(git push -f*)",
+      "Bash(git push * --force*)",
+      "PowerShell(git push * --force*)",
+      "Bash(git push * -f*)",
+      "PowerShell(git push * -f*)",
+      "Bash(git push --delete*)",
+      "PowerShell(git push --delete*)",
+      "Bash(git push -d*)",
+      "PowerShell(git push -d*)",
+      "Bash(git push * --delete*)",
+      "PowerShell(git push * --delete*)",
+      "Bash(git push * -d*)",
+      "PowerShell(git push * -d*)",
+      "Bash(git push * +*)",
+      "PowerShell(git push * +*)",
+      "Bash(git push --mirror*)",
+      "PowerShell(git push --mirror*)",
+      "Bash(git push * --mirror*)",
+      "PowerShell(git push * --mirror*)"
     ]
   }
 }
