@@ -39,6 +39,7 @@ Everything is built in the dev environment, never as files on their own. This re
 7. Keep the latest version under `src/`, synced from the dev environment, so every change is reviewed and kept.
 8. Add every page and screen to `tests/accessibility/targets.json`, and every agent topic to `tests/agent-test-set.md`, in the same change that builds it.
 9. Zero findings of any severity is the definition of done. Never weaken a check, delete a test target or add a suppression without a written reason.
+10. Canvas screens: the header and main containers have no corner radius. The page container is centred, at most 1366 wide and responsive down to 375: `Width: =Max(375, Min(1366, Parent.Width))` and `X: =(Parent.Width - Self.Width) / 2`. Everything inside takes its width from its container, so it fits at every width from 375 to 1366.
 
 ## Never
 
